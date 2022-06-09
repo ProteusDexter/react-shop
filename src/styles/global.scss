@@ -1,11 +1,14 @@
 
-$base-color :red;
-$color:black;
+// $base-color :red;
+// $color:black;
 
-body{
-    background-color: $base-color;
-    color:$color;
-}
+// body{
+//     background-color: $base-color;
+//     color:$color;
+// }
 
-
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
 
