@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack server --mode development --open",
-    "build":"webpack --mode production"
+    "build": "webpack --mode production"
   },
   "keywords": [
     "react",
@@ -27,5 +27,13 @@
     "html-webpack-plugin": "^5.5.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProteusDexter/react-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ProteusDexter/react-shop/issues"
+  },
+  "homepage": "https://github.com/ProteusDexter/react-shop#readme"
 }
