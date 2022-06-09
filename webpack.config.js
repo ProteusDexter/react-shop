@@ -6,12 +6,6 @@ const HtmlWebpackPlugin =require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 
-
-
-
-
-
-
 module.exports={
     entry:"./src/index.js",
     output:{
@@ -40,7 +34,7 @@ module.exports={
                 ]
             },
             {
-                test:/\.s[ac]ss$/i,
+                test:/\.(css|scss)$/,
                 use:[
                     "style-loader",
                     "css-loader",
@@ -66,6 +60,6 @@ module.exports={
         directory: path.join(__dirname,"dist")
         },
         compress:true,
-        port:3000,
+        port:3005,
     }
 }
