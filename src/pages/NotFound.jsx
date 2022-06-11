@@ -2,7 +2,7 @@ import React from 'react';
 const NotFound = () => {
     return (
        <div>
-         No encontrado, Error 404.
+         No se ha encontrado la pag. solicitada, Error 404.
        </div> 
     );
 }
