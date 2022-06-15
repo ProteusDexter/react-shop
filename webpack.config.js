@@ -6,6 +6,7 @@ const HtmlWebpackPlugin =require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 
+const newLocal = 'src/assets/icons/';
 module.exports={
     entry:"./src/index.js",
     output:{
@@ -16,6 +17,15 @@ module.exports={
     mode: "development",
     resolve: {
         extensions:[".js",".jsx"],
+        alias:{
+			'@components': path.resolve(__dirname, 'src/components/'),
+			'@containers': path.resolve(__dirname, 'src/containers/'),
+			'@styles': path.resolve(__dirname, 'src/styles/'),
+			'@icons': path.resolve(__dirname, "src/assets/icons/"),
+			'@logos': path.resolve(__dirname, 'src/assets/logos/'),
+			'@emails': path.resolve(__dirname, 'src/assets/icons/'),
+            
+		}
     },
     module:{
         rules:[
@@ -28,14 +38,15 @@ module.exports={
             },
             {
             test: /\.(png|jp(e*)g|svg|gif)$/,
-                use: [
-                    {
-                    loader: 'file-loader',
-                    options: {
-                        name: 'images/[hash]-[name].[ext]',
-                    },
-                },
-                    ],
+                type:"asset",
+                // use: [
+                //     {
+                //     loader: 'file-loader',
+                //     options: {
+                //         name: 'images/[hash]-[name].[ext]',
+                //     },
+                // },
+                //     ],
                },
             {
             test: /\.html$/,
